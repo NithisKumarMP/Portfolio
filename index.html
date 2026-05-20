@@ -965,13 +965,7 @@
 </footer>
 
 <script>
-  // mailto handler — works inside iframes/preview environments
-  document.querySelectorAll('[data-mailto]').forEach(el => {
-    el.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.open('mailto:nithiskumar2003@gmail.com', '_blank');
-    });
-  });
+
 
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
